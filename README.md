@@ -1,4 +1,11 @@
+#学习文档
+https://github.com/maicss/PyQt-Chinese-tutorial 
+byhy.net
+https://github.com/muziing/PyQt_practice/tree/master
 # pyqtTool
+安装
+pip install pyqt5
+
 工具开发快速模板
 AutoGenerateUi.ui用designer设计然后用pyUIc自动生成，不用管它，我们自己封装一个UI类，以便于不用每次修改AutoGenerateUi.ui后自动生成的py文件把我们写好的自定义槽函数和信号覆盖
 CustomSlot.py这个模块中类封装啦我们自定义的槽，和以前AutoGenerateUi类进行分离，独立管理，进行解耦
@@ -15,8 +22,8 @@ def get_path(relative_path):
         base_path = sys._MEIPASS # pyinstaller打包后的路径
     except AttributeError:
         base_path = os.path.abspath(".") # 当前工作目录的路径
- 
     return os.path.normpath(os.path.join(base_path, relative_path)) # 返回实际路径
+    
 3、pip install pyinstaller
 4、pyinstaller -w -F --add-data assets;assets my_app_name.py
 参数说明：
