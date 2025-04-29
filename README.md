@@ -31,4 +31,21 @@ def get_path(relative_path):
 -F dist文件夹中只生成exe文件（--onefile）
 --add-data 本地资源;目标资源
 
+给对象设置parent对象
+obj3.setParent(obj2)
+查看children对象
+obj1.children()
 
+对象事件
+obj1.destroyed.connect(lambda: print("obj1被释放了"))
+
+窗口事件
+windowTitleChanged  窗口标题修改监听事件
+窗口不接受信号
+window.blockSignals(True)  # 避免出现死循环
+window.blockSignals(False)  # 恢复连接，使下一次还能进行修改
+
+检查对象类型
+print(o, "是否为控件", o.isWidgetType())
+print(o.inherits("QWidget"))  # 对象是否继承自QWidget
+print(o.inherits("QPushbutton"))
