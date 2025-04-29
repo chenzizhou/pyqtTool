@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QJMS</class>
+ <widget class="QMainWindow" name="QJMS">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_car"/>
+   <addaction name="action_wgr"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_car">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/c60068129/.designer/file/违规影响类/纯色1.jpg</normaloff>C:/Users/c60068129/.designer/file/违规影响类/纯色1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>car</string>
+   </property>
+   <property name="toolTip">
+    <string>car</string>
+   </property>
+  </action>
+  <action name="action_wgr">
+   <property name="icon">
+    <iconset>
+     <normaloff>C:/Users/c60068129/.designer/file/违规影响类/纯色2.jpg</normaloff>C:/Users/c60068129/.designer/file/违规影响类/纯色2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>wgr</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
