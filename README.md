@@ -5,6 +5,7 @@ https://github.com/muziing/PyQt_practice/tree/master
 # pyqtTool
 安装
 pip install pyqt5
+pip install pyqt5designer
 
 工具开发快速模板
 AutoGenerateUi.ui用designer设计然后用pyUIc自动生成，不用管它，我们自己封装一个UI类，以便于不用每次修改AutoGenerateUi.ui后自动生成的py文件把我们写好的自定义槽函数和信号覆盖
