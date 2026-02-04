@@ -26,7 +26,8 @@ def get_path(relative_path):
     return os.path.normpath(os.path.join(base_path, relative_path)) # 返回实际路径
     
 3、pip install pyinstaller
-4、pyinstaller -w -F --add-data assets;assets my_app_name.py
+4、pyinstaller -w -F --add-data assets;assets --add-data xxx;xxx my_app_name.py
+                                                         未打包前的文件夹；打包后sys._MEIPASS路径下的文件夹          
 参数说明：
 -w 运行exe文件，不显示后台黑窗口
 -F dist文件夹中只生成exe文件（--onefile）
